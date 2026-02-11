@@ -9,6 +9,15 @@
     },
     "articles": [
         {
+            "image": "images/content/morrison_schlagzeile_Softwaresektor_zwing_20260211_080200.webp",
+            "title": "Softwaresektor zwingt Kredite in die Klemme",
+            "date": "11. Februar 2026",
+            "iso_date": "2026-02-11",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-softwaresektor-zwing-20260211-080200.html"
+        },
+        {
             "image": "images/content/golden_era_Camilla_Sparv_20260206_134607.webp",
             "title": "Camilla Sparv",
             "date": "06. Februar 2026",
