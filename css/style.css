@@ -686,6 +686,8 @@ body {
 /* --- Archiv Seite: Filter & Grid (inline in archiv.html, hier Overrides) --- */
 
 /* --- Responsive --- */
+
+/* Tablet & kleine Laptops */
 @media (max-width: 768px) {
     .content-layout {
         flex-direction: column;
@@ -734,17 +736,62 @@ body {
         width: 10%;
     }
 
+    .section-header h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
     .site-header::after {
         letter-spacing: 4px;
         font-size: 0.5rem;
     }
+
+    .featured {
+        margin-bottom: 30px;
+    }
+
+    .section-header {
+        margin-bottom: 25px;
+    }
+
+    .divider {
+        margin: 30px 0;
+    }
+
+    .site-footer {
+        padding: 25px 20px 20px;
+    }
+
+    .site-footer::before {
+        font-size: 0.4rem;
+        letter-spacing: 2px;
+    }
+
+    /* Artikel-Seiten */
+    .main-content .artikel-title {
+        font-size: 1.4rem;
+    }
+
+    .main-content .artikel-container {
+        padding: 25px 15px;
+    }
 }
 
+/* Smartphone */
 @media (max-width: 480px) {
-    .site-nav a {
-        padding: 8px 12px;
-        font-size: 0.7rem;
-        letter-spacing: 1px;
+    .site-header {
+        padding: 15px 15px 0;
+    }
+
+    .header-logo {
+        max-width: 220px;
+    }
+
+    .site-header::after {
+        content: '\2726 \2726 \2726 \2726 \2726 \2726 \2726';
+        letter-spacing: 2px;
+        font-size: 0.4rem;
+        overflow: hidden;
     }
 
     .site-header::before {
@@ -757,5 +804,180 @@ body {
                 transparent 3px, transparent 4px,
                 var(--gold) 4px, var(--gold) 5px
             );
+    }
+
+    /* Navigation: Ticker verstecken, Links touch-freundlich */
+    .ticker-wrap {
+        display: none;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+    }
+
+    .site-nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .site-nav a {
+        padding: 12px 20px;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    /* Section Headers kompakter */
+    .section-header {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .section-header h2 {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        padding: 0 10px;
+    }
+
+    .section-header h2::after {
+        font-size: 0.4rem;
+        letter-spacing: 3px;
+    }
+
+    .section-header::before,
+    .section-header::after {
+        width: 5%;
+    }
+
+    /* Featured kompakter */
+    .featured {
+        margin-bottom: 25px;
+    }
+
+    .featured-info {
+        padding: 15px;
+    }
+
+    .featured-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .featured-info::before {
+        letter-spacing: 4px;
+        font-size: 0.3rem;
+    }
+
+    .featured-type {
+        font-size: 0.6rem;
+        padding: 2px 8px;
+    }
+
+    /* Article Cards */
+    .article-card .card-info {
+        padding: 12px 14px;
+    }
+
+    /* Divider */
+    .divider {
+        margin: 25px 0;
+    }
+
+    .divider span {
+        font-size: 0.75rem;
+        padding: 0 12px;
+    }
+
+    /* Newsfeed Sidebar */
+    .newsfeed-sidebar {
+        max-height: 250px;
+    }
+
+    .newsfeed-header {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 20px 15px 15px;
+    }
+
+    .footer-logo {
+        width: 60px;
+    }
+
+    .footer-text {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .site-footer::before {
+        letter-spacing: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .site-footer::after {
+        margin-top: 15px;
+    }
+
+    /* Artikel-Seiten */
+    .main-content .artikel-title {
+        font-size: 1.2rem;
+    }
+
+    .main-content .artikel-container {
+        padding: 20px 10px;
+    }
+
+    .main-content .artikel-image {
+        margin: 15px 0;
+    }
+
+    .main-content .artikel-back {
+        font-size: 0.75rem;
+        padding: 10px 16px;
+        min-height: 44px;
+    }
+
+    /* Impressum */
+    .main-content .impressum-container {
+        padding: 30px 15px;
+    }
+
+    .main-content .impressum-container h1 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* Kleine Smartphones (< 360px) */
+@media (max-width: 360px) {
+    .header-logo {
+        max-width: 180px;
+    }
+
+    .site-header::after {
+        content: '\2726 \2726 \2726 \2726 \2726';
+        letter-spacing: 2px;
+    }
+
+    .section-header h2 {
+        font-size: 1rem;
+    }
+
+    .featured-info h3 {
+        font-size: 1rem;
+    }
+
+    .main-content .artikel-title {
+        font-size: 1.1rem;
     }
 }
