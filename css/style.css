@@ -27,7 +27,7 @@ img {
     --beige-dark: #C4B48E;
     --black: #1A1A1A;
     --cream: #F0E6D0;
-    --paper: #F0E6D0;
+    --paper: #FFFDF7;
     --yellow-news: #EDE0B8;
     --yellow-dark: #D6C78E;
     --gold: #B8963E;
@@ -427,7 +427,7 @@ body {
     font-weight: 700;
     color: var(--brown);
     display: inline-block;
-    background-color: var(--cream);
+    background-color: var(--paper);
     padding: 0 20px;
     letter-spacing: 4px;
     text-transform: uppercase;
