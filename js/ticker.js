@@ -62,6 +62,12 @@ function generateDemoData() {
     });
 }
 
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = String(str);
+    return div.innerHTML;
+}
+
 function renderTicker(data) {
     const track = document.getElementById('ticker-track');
     if (!track || data.length === 0) return;
@@ -69,10 +75,10 @@ function renderTicker(data) {
     function renderItems() {
         return data.map(item => `
             <span class="ticker-item">
-                <span class="ticker-symbol">${item.symbol}</span>
-                <span class="ticker-price">${item.price}</span>
+                <span class="ticker-symbol">${escapeHtml(item.symbol)}</span>
+                <span class="ticker-price">${escapeHtml(item.price)}</span>
                 <span class="ticker-change ${item.up ? 'ticker-up' : 'ticker-down'}">
-                    ${item.up ? '\u25B2' : '\u25BC'} ${item.change}
+                    ${item.up ? '\u25B2' : '\u25BC'} ${escapeHtml(item.change)}
                 </span>
             </span>
             <span class="ticker-sep">\u2022</span>
