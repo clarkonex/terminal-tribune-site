@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegraph — Terminal Tribune</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ticker.js" defer></script>
+    <script src="js/newsfeed.js" defer></script>
+    <style>
+        .telegraph-fullpage {
+            padding: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .telegraph-fullpage .newsfeed-header {
+            position: sticky;
+            top: 46px;
+            z-index: 10;
+        }
+
+        .telegraph-fullpage .news-item {
+            padding: 14px 18px;
+        }
+
+        .telegraph-fullpage .news-title {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .telegraph-fullpage .news-source {
+            font-size: 0.6rem;
+        }
+
+        .telegraph-fullpage .news-time {
+            font-size: 0.6rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header class="site-header">
+        <a href="index.html">
+            <img src="images/logo/tribune_header_full.webp" alt="Terminal Tribune" class="header-logo" draggable="false">
+        </a>
+    </header>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Aktuell</a></li>
+            <li><a href="archiv.html">Archiv</a></li>
+            <li class="nav-mobile-only"><a href="telegraph.html" class="active">Telegraph</a></li>
+        </ul>
+        <div class="ticker-wrap">
+            <div class="ticker-track" id="ticker-track"></div>
+        </div>
+    </nav>
+
+    <div class="telegraph-fullpage">
+        <div class="newsfeed-header">Telegraph</div>
+        <div id="newsfeed-items"></div>
+    </div>
+
+    <footer class="site-footer">
+        <img src="images/logo/LOGO.webp" alt="Terminal Tribune Logo" class="footer-logo">
+        <p class="footer-text">Terminal Tribune — Ink &amp; Iron, Büro 404</p>
+        <p class="footer-text" style="margin-top: 10px;"><a href="impressum.html" style="color: var(--brown-light); text-decoration: none;">Impressum</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

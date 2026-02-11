@@ -210,6 +210,17 @@ body {
     color: var(--gold-light);
 }
 
+/* --- Mobile-only Nav Link (Telegraph) --- */
+.nav-mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-mobile-only {
+        display: list-item;
+    }
+}
+
 /* --- Stock Ticker --- */
 .ticker-wrap {
     flex: 1;
