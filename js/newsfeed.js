@@ -42,14 +42,28 @@ function formatTimeAgo(dateStr) {
     return Math.floor(hrs / 24) + ' T.';
 }
 
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function sanitizeUrl(url) {
+    try {
+        const parsed = new URL(url);
+        if (parsed.protocol === 'https:' || parsed.protocol === 'http:') return parsed.href;
+    } catch (e) {}
+    return '#';
+}
+
 function renderNewsfeed(items) {
     const container = document.getElementById('newsfeed-items');
     if (!container) return;
 
     container.innerHTML = items.map(item => `
-        <a href="${item.link}" target="_blank" rel="noopener" class="news-item">
-            <span class="news-source">${item.source}</span>
-            <span class="news-title">${item.title}</span>
+        <a href="${sanitizeUrl(item.link)}" target="_blank" rel="noopener" class="news-item">
+            <span class="news-source">${escapeHtml(item.source)}</span>
+            <span class="news-title">${escapeHtml(item.title)}</span>
             <span class="news-time">${formatTimeAgo(item.date)}</span>
         </a>
     `).join('');
