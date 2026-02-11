@@ -1,11 +1,11 @@
 {
     "featured": {
-        "image": "images/content/terminal_tribune_20260206_134059.webp",
+        "image": "images/content/terminal_tribune_20260211_162753.webp",
         "title": "Current News",
-        "date": "06. Februar 2026",
-        "iso_date": "2026-02-06",
+        "date": "11. Februar 2026",
+        "iso_date": "2026-02-11",
         "type": "Tagesausgabe",
-        "page": "artikel/terminal-tribune-20260206-134059.html"
+        "page": "artikel/terminal-tribune-20260211-162753.html"
     },
     "articles": [
         {
@@ -16,6 +16,15 @@
             "type": "Golden Era",
             "category": "golden-era",
             "page": "artikel/golden-era-camilla-sparv-20260206-134607.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260206_134059.webp",
+            "title": "Current News",
+            "date": "06. Februar 2026",
+            "iso_date": "2026-02-06",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260206-134059.html"
         },
         {
             "image": "images/content/terminal_tribune_20260205_145044.webp",
@@ -727,51 +736,6 @@
             "type": "Tagesausgabe",
             "category": "tagesausgabe",
             "page": "artikel/terminal-tribune-20260113-080834.html"
-        },
-        {
-            "image": "images/content/rueckspiegel__20260112_183404.webp",
-            "title": "Ohne Titel",
-            "date": "12. Januar 2026",
-            "iso_date": "2026-01-12",
-            "type": "Rückspiegel",
-            "category": "rueckspiegel",
-            "page": "artikel/rueckspiegel-20260112-183404.html"
-        },
-        {
-            "image": "images/content/morrison_schlagzeile_Familie_Heimat_Ehe_T_20260112_063149.webp",
-            "title": "Familie Heimat Ehe T",
-            "date": "12. Januar 2026",
-            "iso_date": "2026-01-12",
-            "type": "Schlagzeile",
-            "category": "schlagzeile",
-            "page": "artikel/morrison-schlagzeile-familie-heimat-ehe-t-20260112-063149.html"
-        },
-        {
-            "image": "images/content/morrison_schlagzeile_mit_offenen_Augen_20260112_055738.webp",
-            "title": "mit offenen Augen",
-            "date": "12. Januar 2026",
-            "iso_date": "2026-01-12",
-            "type": "Schlagzeile",
-            "category": "schlagzeile",
-            "page": "artikel/morrison-schlagzeile-mit-offenen-augen-20260112-055738.html"
-        },
-        {
-            "image": "images/content/morrison_report_Der_Berliner_Brandan_20260112_074858.webp",
-            "title": "Der Berliner Brandan",
-            "date": "12. Januar 2026",
-            "iso_date": "2026-01-12",
-            "type": "Report",
-            "category": "artikel",
-            "page": "artikel/morrison-report-der-berliner-brandan-20260112-074858.html"
-        },
-        {
-            "image": "images/content/morrison_schlagzeile_Berliner_Brandanschl_20260112_075913.webp",
-            "title": "Berliner Brandanschl",
-            "date": "12. Januar 2026",
-            "iso_date": "2026-01-12",
-            "type": "Schlagzeile",
-            "category": "schlagzeile",
-            "page": "artikel/morrison-schlagzeile-berliner-brandanschl-20260112-075913.html"
         }
     ]
 }
