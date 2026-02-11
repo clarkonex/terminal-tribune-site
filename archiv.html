@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiv — Terminal Tribune</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ticker.js" defer></script>
+    <script src="js/newsfeed.js" defer></script>
+    <style>
+        /* --- Filter Buttons --- */
+        .filter-bar {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            font-family: 'Special Elite', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 8px 18px;
+            border: 1px solid var(--brown);
+            background-color: transparent;
+            color: var(--brown);
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--brown);
+            color: var(--beige);
+        }
+
+        /* --- Masonry-style Grid --- */
+        .archive-grid {
+            columns: 3;
+            column-gap: 20px;
+        }
+
+        .archive-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid var(--beige-dark);
+            background-color: var(--cream);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .archive-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(92, 58, 30, 0.15);
+        }
+
+        .archive-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .archive-item .item-info {
+            padding: 10px 14px;
+            border-top: 1px solid var(--beige-dark);
+        }
+
+        .archive-item .item-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            color: var(--brown-dark);
+            margin-bottom: 3px;
+            line-height: 1.3;
+        }
+
+        .item-date {
+            font-style: italic;
+            font-size: 0.75rem;
+            color: var(--brown-light);
+        }
+
+        .item-type {
+            display: inline-block;
+            font-family: 'Special Elite', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background-color: var(--beige-dark);
+            color: var(--brown-dark);
+            padding: 2px 7px;
+            margin-bottom: 5px;
+        }
+
+        .archive-item.hidden {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            .archive-grid { columns: 2; }
+        }
+
+        @media (max-width: 550px) {
+            .archive-grid { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header class="site-header">
+        <a href="index.html">
+            <img src="images/logo/tribune_header_full.webp" alt="Terminal Tribune" class="header-logo" draggable="false">
+        </a>
+    </header>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Aktuell</a></li>
+            <li><a href="archiv.html" class="active">Archiv</a></li>
+        </ul>
+        <div class="ticker-wrap">
+            <div class="ticker-track" id="ticker-track"></div>
+        </div>
+    </nav>
+
+    <div class="content-layout">
+
+        <main class="main-content">
+
+            <div class="section-header">
+                <h2>Archiv</h2>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="alle">Alle</button>
+                <button class="filter-btn" data-filter="tagesausgabe">Tagesausgabe</button>
+                <button class="filter-btn" data-filter="artikel">Artikel</button>
+                <button class="filter-btn" data-filter="schlagzeile">Schlagzeile</button>
+                <button class="filter-btn" data-filter="golden-era">Golden Era</button>
+                <button class="filter-btn" data-filter="rueckspiegel">Rückspiegel</button>
+                <button class="filter-btn" data-filter="sonstiges">Sonstiges</button>
+            </div>
+
+            <div id="archive-grid" class="archive-grid"></div>
+
+        </main>
+
+        <aside class="newsfeed-sidebar">
+            <div class="newsfeed-header">Telegraph</div>
+            <div id="newsfeed-items"></div>
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <img src="images/logo/LOGO.webp" alt="Terminal Tribune Logo" class="footer-logo">
+        <p class="footer-text">Terminal Tribune — Ink &amp; Iron, Büro 404</p>
+    </footer>
+
+</div>
+
+<script>
+    fetch('content.json')
+        .then(res => res.json())
+        .then(data => {
+            const grid = document.getElementById('archive-grid');
+
+            // Featured (Tagesausgabe) zuerst, dann alle Artikel
+            const all = [
+                { ...data.featured, category: 'tagesausgabe' },
+                ...data.articles
+            ];
+
+            grid.innerHTML = all.map(a => `
+                <a href="${a.page}" class="archive-item" data-category="${a.category}">
+                    <img src="${a.image}" alt="${a.title}">
+                    <div class="item-info">
+                        <span class="item-type">${a.type}</span>
+                        <h3>${a.title}</h3>
+                        <span class="item-date">${a.date}</span>
+                    </div>
+                </a>
+            `).join('');
+
+            // Filter
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    document.querySelectorAll('.archive-item').forEach(item => {
+                        if (filter === 'alle' || item.dataset.category === filter) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+</script>
+
+</body>
+</html>

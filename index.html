@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Tribune — Ink &amp; Iron, Büro 404</title>
+
+    <!-- Open Graph für Social Media -->
+    <meta property="og:title" content="Terminal Tribune — Ink & Iron, Büro 404">
+    <meta property="og:description" content="Die Nachrichten, die andere lieber verschweigen. Jack Morrison berichtet.">
+    <meta property="og:image" content="images/logo/LOGO.webp">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ticker.js" defer></script>
+    <script src="js/newsfeed.js" defer></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <a href="index.html">
+            <img src="images/logo/tribune_header_full.webp" alt="Terminal Tribune — Ink & Iron, Büro 404" class="header-logo" draggable="false">
+        </a>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html" class="active">Aktuell</a></li>
+            <li><a href="archiv.html">Archiv</a></li>
+        </ul>
+        <div class="ticker-wrap">
+            <div class="ticker-track" id="ticker-track"></div>
+        </div>
+    </nav>
+
+    <!-- ===== CONTENT LAYOUT ===== -->
+    <div class="content-layout">
+
+        <main class="main-content">
+
+            <!-- Neueste Ausgabe — wird aus content.json geladen -->
+            <section class="featured">
+                <div class="section-header">
+                    <h2>Neueste Ausgabe</h2>
+                </div>
+                <div id="featured-container"></div>
+            </section>
+
+            <div class="divider"><span>&#9670; &#9670; &#9670;</span></div>
+
+            <!-- Neueste Artikel — wird aus content.json geladen -->
+            <section>
+                <div class="section-header">
+                    <h2>Neueste Beiträge</h2>
+                </div>
+                <div id="articles-container" class="article-grid"></div>
+            </section>
+
+        </main>
+
+        <!-- ===== NEWSFEED SIDEBAR ===== -->
+        <aside class="newsfeed-sidebar">
+            <div class="newsfeed-header">Telegraph</div>
+            <div id="newsfeed-items"></div>
+        </aside>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <img src="images/logo/LOGO.webp" alt="Terminal Tribune Logo" class="footer-logo">
+        <p class="footer-text">Terminal Tribune — Ink &amp; Iron, Büro 404</p>
+    </footer>
+
+</div>
+
+<script>
+    fetch('content.json')
+        .then(res => res.json())
+        .then(data => {
+            // --- Neueste Ausgabe (bleibt bis du sie änderst) ---
+            const f = data.featured;
+            document.getElementById('featured-container').innerHTML = `
+                <a href="${f.page}" class="featured-card">
+                    <img src="${f.image}" alt="${f.title}">
+                    <div class="featured-info">
+                        <span class="featured-type">${f.type}</span>
+                        <h3>Terminal Tribune — ${f.title}</h3>
+                        <span class="featured-date">${f.date}</span>
+                    </div>
+                </a>
+            `;
+
+            // --- Neueste Beiträge (nur letzte 2 Tage) ---
+            const grid = document.getElementById('articles-container');
+            const featuredDate = new Date(data.featured.iso_date);
+            const cutoff = new Date(featuredDate);
+            cutoff.setDate(cutoff.getDate() - 2);
+
+            const recent = data.articles.filter(a => new Date(a.iso_date) >= cutoff);
+
+            grid.innerHTML = recent.map(a => `
+                <a href="${a.page}" class="article-card">
+                    <img src="${a.image}" alt="${a.title}">
+                    <div class="card-info">
+                        <span class="card-type">${a.type}</span>
+                        <h3>${a.title}</h3>
+                        <span class="card-date">${a.date}</span>
+                    </div>
+                </a>
+            `).join('');
+        });
+</script>
+
+</body>
+</html>

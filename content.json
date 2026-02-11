@@ -1,0 +1,777 @@
+{
+    "featured": {
+        "image": "images/content/terminal_tribune_20260206_134059.webp",
+        "title": "Current News",
+        "date": "06. Februar 2026",
+        "iso_date": "2026-02-06",
+        "type": "Tagesausgabe",
+        "page": "artikel/terminal-tribune-20260206-134059.html"
+    },
+    "articles": [
+        {
+            "image": "images/content/golden_era_Camilla_Sparv_20260206_134607.webp",
+            "title": "Camilla Sparv",
+            "date": "06. Februar 2026",
+            "iso_date": "2026-02-06",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-camilla-sparv-20260206-134607.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260205_145044.webp",
+            "title": "Current News",
+            "date": "05. Februar 2026",
+            "iso_date": "2026-02-05",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260205-145044.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Der_Epstein_Abgrund_20260205_220620.webp",
+            "title": "Der Epstein Abgrund",
+            "date": "05. Februar 2026",
+            "iso_date": "2026-02-05",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-der-epstein-abgrund-20260205-220620.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260204_172029.webp",
+            "title": "Current News",
+            "date": "04. Februar 2026",
+            "iso_date": "2026-02-04",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260204-172029.html"
+        },
+        {
+            "image": "images/content/golden_era_Lynda_Carter_20260203_094145.webp",
+            "title": "Lynda Carter",
+            "date": "03. Februar 2026",
+            "iso_date": "2026-02-03",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-lynda-carter-20260203-094145.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Amnestie_für_27_Jahr_20260203_113230.webp",
+            "title": "Amnestie für 27 Jahr",
+            "date": "03. Februar 2026",
+            "iso_date": "2026-02-03",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-amnestie-fr-27-jahr-20260203-113230.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260203_080857.webp",
+            "title": "Current News",
+            "date": "03. Februar 2026",
+            "iso_date": "2026-02-03",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260203-080857.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260202_125127.webp",
+            "title": "Current News",
+            "date": "02. Februar 2026",
+            "iso_date": "2026-02-02",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260202-125127.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260201_113353.webp",
+            "title": "Current News",
+            "date": "01. Februar 2026",
+            "iso_date": "2026-02-01",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260201-113353.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260131_185621.webp",
+            "title": "Current News",
+            "date": "31. Januar 2026",
+            "iso_date": "2026-01-31",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260131-185621.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260130_103854.webp",
+            "title": "Current News",
+            "date": "30. Januar 2026",
+            "iso_date": "2026-01-30",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260130-103854.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260129_084052.webp",
+            "title": "Current News",
+            "date": "29. Januar 2026",
+            "iso_date": "2026-01-29",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260129-084052.html"
+        },
+        {
+            "image": "images/content/rueckspiegel_29_January_1926_20260129_084927.webp",
+            "title": "29 January 1926",
+            "date": "29. Januar 2026",
+            "iso_date": "2026-01-29",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-29-january-1926-20260129-084927.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_BMW__Henkel_und_ZF_w_20260129_090725.webp",
+            "title": "BMW  Henkel und ZF w",
+            "date": "29. Januar 2026",
+            "iso_date": "2026-01-29",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-bmw-henkel-und-zf-w-20260129-090725.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Rekord_Insolvenzen_B_20260128_123254.webp",
+            "title": "Rekord Insolvenzen B",
+            "date": "28. Januar 2026",
+            "iso_date": "2026-01-28",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-rekord-insolvenzen-b-20260128-123254.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Ministerium_finanzie_20260128_122017.webp",
+            "title": "Ministerium finanzie",
+            "date": "28. Januar 2026",
+            "iso_date": "2026-01-28",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-ministerium-finanzie-20260128-122017.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260128_121056.webp",
+            "title": "Current News",
+            "date": "28. Januar 2026",
+            "iso_date": "2026-01-28",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260128-121056.html"
+        },
+        {
+            "image": "images/content/golden_era_Gewehr_41_20260128_225104.webp",
+            "title": "Gewehr 41",
+            "date": "28. Januar 2026",
+            "iso_date": "2026-01-28",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-gewehr-41-20260128-225104.html"
+        },
+        {
+            "image": "images/content/golden_era_Yvonne_DeCarlo_20260128_225704.webp",
+            "title": "Yvonne DeCarlo",
+            "date": "28. Januar 2026",
+            "iso_date": "2026-01-28",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-yvonne-decarlo-20260128-225704.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260127_143503.webp",
+            "title": "Current News",
+            "date": "27. Januar 2026",
+            "iso_date": "2026-01-27",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260127-143503.html"
+        },
+        {
+            "image": "images/content/golden_era_Eva_Vlaardingerbroek_20260127_174950.webp",
+            "title": "Eva Vlaardingerbroek",
+            "date": "27. Januar 2026",
+            "iso_date": "2026-01-27",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-eva-vlaardingerbroek-20260127-174950.html"
+        },
+        {
+            "image": "images/content/rueckspiegel_27_January_1926_20260127_144226.webp",
+            "title": "27 January 1926",
+            "date": "27. Januar 2026",
+            "iso_date": "2026-01-27",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-27-january-1926-20260127-144226.html"
+        },
+        {
+            "image": "images/content/golden_era_Lauren_Bacall_20260127_145056.webp",
+            "title": "Lauren Bacall",
+            "date": "27. Januar 2026",
+            "iso_date": "2026-01-27",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-lauren-bacall-20260127-145056.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260126_101204.webp",
+            "title": "Current News",
+            "date": "26. Januar 2026",
+            "iso_date": "2026-01-26",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260126-101204.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Bürokraten_20260126_111901.webp",
+            "title": "Bürokraten",
+            "date": "26. Januar 2026",
+            "iso_date": "2026-01-26",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-brokraten-20260126-111901.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Für_den_absoluten_Ma_20260126_120539.webp",
+            "title": "Für den absoluten Ma",
+            "date": "26. Januar 2026",
+            "iso_date": "2026-01-26",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-fr-den-absoluten-ma-20260126-120539.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Migrantenkriminalitä_20260125_075938.webp",
+            "title": "Migrantenkriminalitä",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-migrantenkriminalit-20260125-075938.html"
+        },
+        {
+            "image": "images/content/rueckspiegel_25_January_1926_20260125_065243.webp",
+            "title": "25 January 1926",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-25-january-1926-20260125-065243.html"
+        },
+        {
+            "image": "images/content/golden_era_Dolores_Moran_20260125_070636.webp",
+            "title": "Dolores Moran",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-dolores-moran-20260125-070636.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260125_064419.webp",
+            "title": "Current News",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260125-064419.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Unausgebildete_Fachk_20260125_072307.webp",
+            "title": "Unausgebildete Fachk",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-unausgebildete-fachk-20260125-072307.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Recht_auf_Frieden_un_20260125_141705.webp",
+            "title": "Recht auf Frieden un",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-recht-auf-frieden-un-20260125-141705.html"
+        },
+        {
+            "image": "images/content/miraculously_20260125_143547.webp",
+            "title": "Ohne Titel",
+            "date": "25. Januar 2026",
+            "iso_date": "2026-01-25",
+            "type": "Miraculously",
+            "category": "sonstiges",
+            "page": "artikel/miraculously-20260125-143547.html"
+        },
+        {
+            "image": "images/content/golden_era_Raquel_Welch_20260124_134852.webp",
+            "title": "Raquel Welch",
+            "date": "24. Januar 2026",
+            "iso_date": "2026-01-24",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-raquel-welch-20260124-134852.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_EU_bezahlt_für_illeg_20260124_062714.webp",
+            "title": "EU bezahlt für illeg",
+            "date": "24. Januar 2026",
+            "iso_date": "2026-01-24",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-eu-bezahlt-fr-illeg-20260124-062714.html"
+        },
+        {
+            "image": "images/content/golden_era_Ewa_Brigitta_Aulin_20260124_135427.webp",
+            "title": "Ewa Brigitta Aulin",
+            "date": "24. Januar 2026",
+            "iso_date": "2026-01-24",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-ewa-brigitta-aulin-20260124-135427.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260124_062848.webp",
+            "title": "Current News",
+            "date": "24. Januar 2026",
+            "iso_date": "2026-01-24",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260124-062848.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Wien___organisierte__20260123_073043.webp",
+            "title": "Wien   organisierte",
+            "date": "23. Januar 2026",
+            "iso_date": "2026-01-23",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-wien-organisierte-20260123-073043.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Deutschland_und_Ital_20260123_174354.webp",
+            "title": "Deutschland und Ital",
+            "date": "23. Januar 2026",
+            "iso_date": "2026-01-23",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-deutschland-und-ital-20260123-174354.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260123_071957.webp",
+            "title": "Current News",
+            "date": "23. Januar 2026",
+            "iso_date": "2026-01-23",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260123-071957.html"
+        },
+        {
+            "image": "images/content/golden_era_Lizabeth_Scott_20260123_111747.webp",
+            "title": "Lizabeth Scott",
+            "date": "23. Januar 2026",
+            "iso_date": "2026-01-23",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-lizabeth-scott-20260123-111747.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Trump_rechnet_ab_20260122_083752.webp",
+            "title": "Trump rechnet ab",
+            "date": "22. Januar 2026",
+            "iso_date": "2026-01-22",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-trump-rechnet-ab-20260122-083752.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260122_080518.webp",
+            "title": "Current News",
+            "date": "22. Januar 2026",
+            "iso_date": "2026-01-22",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260122-080518.html"
+        },
+        {
+            "image": "images/content/golden_era_Claudia_Cardinale_20260122_094244.webp",
+            "title": "Claudia Cardinale",
+            "date": "22. Januar 2026",
+            "iso_date": "2026-01-22",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-claudia-cardinale-20260122-094244.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Trumps_Friedensrat_20260121_074655.webp",
+            "title": "Trumps Friedensrat",
+            "date": "21. Januar 2026",
+            "iso_date": "2026-01-21",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-trumps-friedensrat-20260121-074655.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Klima_Paradies_in_lu_20260121_091608.webp",
+            "title": "Klima Paradies in lu",
+            "date": "21. Januar 2026",
+            "iso_date": "2026-01-21",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-klima-paradies-in-lu-20260121-091608.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Klima_Paradies_in_lu_20260121_091655.webp",
+            "title": "Klima Paradies in lu",
+            "date": "21. Januar 2026",
+            "iso_date": "2026-01-21",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-klima-paradies-in-lu-20260121-091655.html"
+        },
+        {
+            "image": "images/content/golden_era_Jayne_Mansfield_20260121_080755.webp",
+            "title": "Jayne Mansfield",
+            "date": "21. Januar 2026",
+            "iso_date": "2026-01-21",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-jayne-mansfield-20260121-080755.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260121_072053.webp",
+            "title": "Current News",
+            "date": "21. Januar 2026",
+            "iso_date": "2026-01-21",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260121-072053.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260120_124310.webp",
+            "title": "Current News",
+            "date": "20. Januar 2026",
+            "iso_date": "2026-01-20",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260120-124310.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Weltwirtschaftsforum_20260120_123150.webp",
+            "title": "Weltwirtschaftsforum",
+            "date": "20. Januar 2026",
+            "iso_date": "2026-01-20",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-weltwirtschaftsforum-20260120-123150.html"
+        },
+        {
+            "image": "images/content/golden_era_Loretta_Young_20260120_052333.webp",
+            "title": "Loretta Young",
+            "date": "20. Januar 2026",
+            "iso_date": "2026-01-20",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-loretta-young-20260120-052333.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Europa_ist_isoliert_20260120_053553.webp",
+            "title": "Europa ist isoliert",
+            "date": "20. Januar 2026",
+            "iso_date": "2026-01-20",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-europa-ist-isoliert-20260120-053553.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_von_der_Leyen_Rede_a_20260120_141211.webp",
+            "title": "von der Leyen Rede a",
+            "date": "20. Januar 2026",
+            "iso_date": "2026-01-20",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-von-der-leyen-rede-a-20260120-141211.html"
+        },
+        {
+            "image": "images/content/golden_era_Remmington_Portable_20260119_075911.webp",
+            "title": "Remmington Portable",
+            "date": "19. Januar 2026",
+            "iso_date": "2026-01-19",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-remmington-portable-20260119-075911.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260119_074742.webp",
+            "title": "Current News",
+            "date": "19. Januar 2026",
+            "iso_date": "2026-01-19",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260119-074742.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_Ein_niederländisches_20260119_104140.webp",
+            "title": "Ein niederländisches",
+            "date": "19. Januar 2026",
+            "iso_date": "2026-01-19",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-ein-niederlndisches-20260119-104140.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260118_061940.webp",
+            "title": "Current News",
+            "date": "18. Januar 2026",
+            "iso_date": "2026-01-18",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260118-061940.html"
+        },
+        {
+            "image": "images/content/golden_era_Rita_Hayworth_20260118_070249.webp",
+            "title": "Rita Hayworth",
+            "date": "18. Januar 2026",
+            "iso_date": "2026-01-18",
+            "type": "Golden Era",
+            "category": "golden-era",
+            "page": "artikel/golden-era-rita-hayworth-20260118-070249.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Es_gibt_ein_Konzept__20260117_105511.webp",
+            "title": "Es gibt ein Konzept",
+            "date": "17. Januar 2026",
+            "iso_date": "2026-01-17",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-es-gibt-ein-konzept-20260117-105511.html"
+        },
+        {
+            "image": "images/content/rueckspiegel_17_January_1926_20260117_150549.webp",
+            "title": "17 January 1926",
+            "date": "17. Januar 2026",
+            "iso_date": "2026-01-17",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-17-january-1926-20260117-150549.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260117_094357.webp",
+            "title": "Current News",
+            "date": "17. Januar 2026",
+            "iso_date": "2026-01-17",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260117-094357.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Ist_die_EU_gegen_uns_20260117_135923.webp",
+            "title": "Ist die EU gegen uns",
+            "date": "17. Januar 2026",
+            "iso_date": "2026-01-17",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-ist-die-eu-gegen-uns-20260117-135923.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260116_075038.webp",
+            "title": "Current News",
+            "date": "16. Januar 2026",
+            "iso_date": "2026-01-16",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260116-075038.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_artikel_20260116_081458.webp",
+            "title": "Ohne Titel",
+            "date": "16. Januar 2026",
+            "iso_date": "2026-01-16",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-artikel-20260116-081458.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Ungewählt_Unantastba_20260115_111824.webp",
+            "title": "Ungewählt Unantastba",
+            "date": "15. Januar 2026",
+            "iso_date": "2026-01-15",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-ungewhlt-unantastba-20260115-111824.html"
+        },
+        {
+            "image": "images/content/morrison_artikel_artikel_20260115_111701.webp",
+            "title": "Ohne Titel",
+            "date": "15. Januar 2026",
+            "iso_date": "2026-01-15",
+            "type": "Artikel",
+            "category": "artikel",
+            "page": "artikel/morrison-artikel-artikel-20260115-111701.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_die_Straßen_sind_gep_20260114_014610.webp",
+            "title": "die Straßen sind gep",
+            "date": "14. Januar 2026",
+            "iso_date": "2026-01-14",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-die-straen-sind-gep-20260114-014610.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260114_082206.webp",
+            "title": "Current News",
+            "date": "14. Januar 2026",
+            "iso_date": "2026-01-14",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260114-082206.html"
+        },
+        {
+            "image": "images/content/miraculously_20260113_091500.webp",
+            "title": "Ohne Titel",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Miraculously",
+            "category": "sonstiges",
+            "page": "artikel/miraculously-20260113-091500.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260113_091448.webp",
+            "title": "Current News",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260113-091448.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Diktatoren_und_die_L_20260113_215824.webp",
+            "title": "Diktatoren und die L",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-diktatoren-und-die-l-20260113-215824.html"
+        },
+        {
+            "image": "images/content/filmrolle_20260113_091647.webp",
+            "title": "Ohne Titel",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Filmrolle",
+            "category": "sonstiges",
+            "page": "artikel/filmrolle-20260113-091647.html"
+        },
+        {
+            "image": "images/content/rueckspiegel__20260113_091457.webp",
+            "title": "Ohne Titel",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-20260113-091457.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Diktatoren_und_die_L_20260113_091444.webp",
+            "title": "Diktatoren und die L",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-diktatoren-und-die-l-20260113-091444.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260113_085317.webp",
+            "title": "Current News",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260113-085317.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260113_085456.webp",
+            "title": "Current News",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260113-085456.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260113_083508.webp",
+            "title": "Current News",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260113-083508.html"
+        },
+        {
+            "image": "images/content/morrison_report_Sie_wollen_immer_meh_20260113_091453.webp",
+            "title": "Sie wollen immer meh",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Report",
+            "category": "artikel",
+            "page": "artikel/morrison-report-sie-wollen-immer-meh-20260113-091453.html"
+        },
+        {
+            "image": "images/content/terminal_tribune_20260113_080834.webp",
+            "title": "Current News",
+            "date": "13. Januar 2026",
+            "iso_date": "2026-01-13",
+            "type": "Tagesausgabe",
+            "category": "tagesausgabe",
+            "page": "artikel/terminal-tribune-20260113-080834.html"
+        },
+        {
+            "image": "images/content/rueckspiegel__20260112_183404.webp",
+            "title": "Ohne Titel",
+            "date": "12. Januar 2026",
+            "iso_date": "2026-01-12",
+            "type": "Rückspiegel",
+            "category": "rueckspiegel",
+            "page": "artikel/rueckspiegel-20260112-183404.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Familie_Heimat_Ehe_T_20260112_063149.webp",
+            "title": "Familie Heimat Ehe T",
+            "date": "12. Januar 2026",
+            "iso_date": "2026-01-12",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-familie-heimat-ehe-t-20260112-063149.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_mit_offenen_Augen_20260112_055738.webp",
+            "title": "mit offenen Augen",
+            "date": "12. Januar 2026",
+            "iso_date": "2026-01-12",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-mit-offenen-augen-20260112-055738.html"
+        },
+        {
+            "image": "images/content/morrison_report_Der_Berliner_Brandan_20260112_074858.webp",
+            "title": "Der Berliner Brandan",
+            "date": "12. Januar 2026",
+            "iso_date": "2026-01-12",
+            "type": "Report",
+            "category": "artikel",
+            "page": "artikel/morrison-report-der-berliner-brandan-20260112-074858.html"
+        },
+        {
+            "image": "images/content/morrison_schlagzeile_Berliner_Brandanschl_20260112_075913.webp",
+            "title": "Berliner Brandanschl",
+            "date": "12. Januar 2026",
+            "iso_date": "2026-01-12",
+            "type": "Schlagzeile",
+            "category": "schlagzeile",
+            "page": "artikel/morrison-schlagzeile-berliner-brandanschl-20260112-075913.html"
+        }
+    ]
+}
