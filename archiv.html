@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archiv — Terminal Tribune</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://finnhub.io https://api.rss2json.com; frame-ancestors 'self';">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/ticker.js" defer></script>
     <script src="js/newsfeed.js" defer></script>
@@ -187,6 +188,9 @@
 </div>
 
 <script>
+    function esc(s) { const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
+    function safeUrl(u) { try { const p = new URL(u, location.href); if (p.protocol === 'https:' || p.protocol === 'http:') return p.href; } catch(e) {} return '#'; }
+
     fetch('content.json')
         .then(res => res.json())
         .then(data => {
@@ -199,12 +203,12 @@
             ];
 
             grid.innerHTML = all.map(a => `
-                <a href="${a.page}" class="archive-item" data-category="${a.category}">
-                    <img src="${a.image}" alt="${a.title}">
+                <a href="${safeUrl(a.page)}" class="archive-item" data-category="${esc(a.category)}">
+                    <img src="${safeUrl(a.image)}" alt="${esc(a.title)}">
                     <div class="item-info">
-                        <span class="item-type">${a.type}</span>
-                        <h3>${a.title}</h3>
-                        <span class="item-date">${a.date}</span>
+                        <span class="item-type">${esc(a.type)}</span>
+                        <h3>${esc(a.title)}</h3>
+                        <span class="item-date">${esc(a.date)}</span>
                     </div>
                 </a>
             `).join('');

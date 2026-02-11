@@ -11,6 +11,7 @@
     <meta property="og:image" content="images/logo/LOGO.webp">
     <meta property="og:type" content="website">
 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://finnhub.io https://api.rss2json.com; frame-ancestors 'self';">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/ticker.js" defer></script>
     <script src="js/newsfeed.js" defer></script>
@@ -81,18 +82,21 @@
 </div>
 
 <script>
+    function esc(s) { const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
+    function safeUrl(u) { try { const p = new URL(u, location.href); if (p.protocol === 'https:' || p.protocol === 'http:') return p.href; } catch(e) {} return '#'; }
+
     fetch('content.json')
         .then(res => res.json())
         .then(data => {
             // --- Neueste Ausgabe (bleibt bis du sie änderst) ---
             const f = data.featured;
             document.getElementById('featured-container').innerHTML = `
-                <a href="${f.page}" class="featured-card">
-                    <img src="${f.image}" alt="${f.title}">
+                <a href="${safeUrl(f.page)}" class="featured-card">
+                    <img src="${safeUrl(f.image)}" alt="${esc(f.title)}">
                     <div class="featured-info">
-                        <span class="featured-type">${f.type}</span>
-                        <h3>Terminal Tribune — ${f.title}</h3>
-                        <span class="featured-date">${f.date}</span>
+                        <span class="featured-type">${esc(f.type)}</span>
+                        <h3>Terminal Tribune — ${esc(f.title)}</h3>
+                        <span class="featured-date">${esc(f.date)}</span>
                     </div>
                 </a>
             `;
@@ -106,12 +110,12 @@
             const recent = data.articles.filter(a => new Date(a.iso_date) >= cutoff);
 
             grid.innerHTML = recent.map(a => `
-                <a href="${a.page}" class="article-card">
-                    <img src="${a.image}" alt="${a.title}">
+                <a href="${safeUrl(a.page)}" class="article-card">
+                    <img src="${safeUrl(a.image)}" alt="${esc(a.title)}">
                     <div class="card-info">
-                        <span class="card-type">${a.type}</span>
-                        <h3>${a.title}</h3>
-                        <span class="card-date">${a.date}</span>
+                        <span class="card-type">${esc(a.type)}</span>
+                        <h3>${esc(a.title)}</h3>
+                        <span class="card-date">${esc(a.date)}</span>
                     </div>
                 </a>
             `).join('');
