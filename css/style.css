@@ -27,7 +27,7 @@ img {
     --beige-dark: #C4B48E;
     --black: #1A1A1A;
     --cream: #F0E6D0;
-    --paper: #FFFDF7;
+    --paper: #F0E6D0;
     --yellow-news: #EDE0B8;
     --yellow-dark: #D6C78E;
     --gold: #B8963E;
@@ -106,7 +106,7 @@ body {
     padding: 30px 40px 0;
     position: relative;
     z-index: 2;
-    background-color: #FFFDF7;
+    background-color: var(--paper);
 }
 
 /* Art Deco obere Zierleiste */
